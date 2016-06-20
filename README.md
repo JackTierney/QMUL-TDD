@@ -21,7 +21,7 @@ var testQmul = function () {};
 
 In this example, testQmul is the test function, and qmul is the function under test.
 
-https://repl.it/C4Hu/1
+>>>>>>>>>> Here https://repl.it/C4Hu/1
 
 
 
@@ -45,7 +45,7 @@ We said that the test function must call the function under test. Let's do that.
 
 We'll assign the result to a variable called "actual" which we will use later.
 
-https://repl.it/C4Hy/3
+>>>>>>>>>>>> Here https://repl.it/C4Hy/3
 
 
 ## Make the test fail...
@@ -66,7 +66,7 @@ Declare a function called areEqual that accepts two arguments, expected and actu
 
 Next, declare a new variable inside testQmul called expected and assign it a value of 1. Then, also inside testQmul, return the result of calling the areEqual function, passing expected and actual as parameters.
 
-https://repl.it/C4IE/1
+>>>>>>>>>>>>> Here https://repl.it/C4IE/1
 
 
 # ...then update foo so that the test passes
@@ -78,7 +78,7 @@ So, now all we have to do is update qmul to make the test pass. How do we do tha
 Instructions
 Update the foo function so that it returns a value that will make the test pass.
 
-https://repl.it/C4IK
+>>>>>>>>>>>> Here https://repl.it/C4IK
 
 
 #Making qmul useful.
@@ -130,7 +130,7 @@ Then, write a test called testTree with an argument of func where the expected v
 
 Finally, call testTree passing in tree as a parameter.
 
-here >>>>> https://repl.it/C4IW
+>>>>>>>> Here https://repl.it/C4IW
 
 
 
@@ -161,7 +161,7 @@ I've included the areEqual function and the factorial function for you.
 
 Let's get started.
 
-Here >>>>>>>> https://repl.it/C4I1
+>>>>>>>> Here https://repl.it/C4I1
 
 
 # Great, now make the test pass.....
@@ -181,7 +181,7 @@ Write a test called "testFactorial_2" where the expected value is 2 when the par
 
 Then, call testFactorial_2 passing in factorial as a parameter.
 
-here >>>>>>>> https://repl.it/C4I6
+>>>>>>>> Here https://repl.it/C4I6
 
 
 ## now make the test pass...... again.
@@ -194,7 +194,7 @@ Update factorial to return 2 when the argument is 2.
 * Remember, you must do this in such a way that the previous test - testFactorial_1 - still passes!!!
 * 
 
-here >>>> https://repl.it/C4Ic
+>>>>>> Here  https://repl.it/C4Ic
 
 
 Factorial: The Dark Function Rises
@@ -222,7 +222,7 @@ Write a test called "testFactorial_3" where the expected value is 6 when the par
 Then, call testFactorial_3 passing in factorial as a parameter.
 
 
->>>>>>>here https://repl.it/C4Ie
+>>>>>>> Here https://repl.it/C4Ie
 
 
 ### now make the test pass... didn't we already do this?
@@ -236,7 +236,7 @@ Update factorial to return 6 when the argument is 3. Remember, you must do this 
 
 Once again, look at my version of factorial:
 
-here >>>>> https://repl.it/C4Ii
+>>>>>>>> Here https://repl.it/C4Ii
 
 Again, I made **just enough** changes to make my tests pass.
 
@@ -251,7 +251,7 @@ Write a test called "testFactorial_7" where the parameter passed is 7. Use a cal
 
 Then, call testFactorial_7 passing in factorial as a parameter. It should pass right??? 
 
-Here >>>>>> https://repl.it/C4Il
+>>>>>> Here https://repl.it/C4Il
 
 
 
@@ -259,7 +259,7 @@ Here >>>>>> https://repl.it/C4Il
 The testFactorial7 test doesn't pass after all. Making testFactorial7 pass is likely to involve a general solution for all legal values of n. Give it a try. See if you can incorporate a for loop from earlier.
 
 
-here >>>>>>> https://repl.it/C4Ir
+>>>>>>> Here https://repl.it/C4Ir
 
 
 
@@ -288,7 +288,7 @@ Write a test called "testFactorial_21" where the expected value is undefined whe
 Then, call testFactorial_21 passing in factorial as a parameter.
 
 
-here >>>>>>> https://repl.it/C4Iv
+>>>>>>> Here https://repl.it/C4Iv
 
 
 
@@ -306,4 +306,55 @@ Then, call testFactorial_string passing in factorial as a parameter.
 
 BEFORE YOU CLICK Save & Submit Code, look at factorial. Can you see any issue with calling it, passing a string as a parameter? What do you think might happen? DON'T FIX IT (or you'll get an Oops), just think about what might happen.
 
-here>>>> https://repl.it/C4Iv/1
+>>>>>>>>> Here https://repl.it/C4Iv/1
+
+#Before we continue
+It was mentioned in the feedback that I overlooked a crucial test:
+
+Factorial of 0 is 1
+
+Instructions
+Write a test called "testFactorial_0" where the expected value is 1 when the parameter passed is 0.
+
+Then, call testFactorial_0 passing in factorial as a parameter.
+
+look at the factorial method. What do you think will happen when you pass 0 to this function?, just think about what might happen.
+
+>>>>>>>>>> Here https://repl.it/C4Il
+
+#Make testFactorial_0 pass
+
+The testing process is iterative.
+
+You will find that, having written your tests and made them pass, after some time, other tests come to mind. You can add them as you think of them. testFactorial_0 is such an example.
+
+
+
+Another important case
+Here's another crucial test I overlooked:
+
+Factorial of (less than zero) is undefined
+
+Instructions
+Write a test called "testFactorial_lessThanZero" where the expected value is undefined when the parameter passed is -1.
+
+>>>>>>>> Here https://repl.it/C4KJ
+
+Then, call testFactorial_lessThanZero passing in factorial as a parameter. Once again, look at the factorial method. What do you think will happen when you pass a value less than 0 to this function? DON'T TRY!!!!! just have a think.
+
+
+# Now finally update that.
+
+# Summary
+Excellent work! Really! This lesson has been long and arduous but you stuck with it.
+
+What the factorial sections hopefully illustrated was an iterative approach to programming - you write some test and confirm that it fails, then you make it pass. Then you write some test and confirm that it fails, then make it pass... and so on.
+
+Review the code one last time. Feel free to play around with it. There are some things to be aware of:
+
+* We did not cover at least one important test: what if n is a decimal value? I leave this as an exercise for you to work through on your own.
+
+* We did a lot of repetition in our tests. Perhaps we could have found a way to re-use some of that code.
+Normally in test driven development, a test should inform you when the test fails, and only then. That way, you can tell at a glance whether or not your tests pass, and if not which tests failed. In a future lesson we'll improve on the model of our test functions and the areEqual function.
+
+* One of the things testing affords us is the ability to update our code with confidence. Since we have tests in place, we know immediately if an update breaks the code.
